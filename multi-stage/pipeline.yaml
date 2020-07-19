@@ -1,0 +1,8 @@
+name: $(Date:yyyy.MM.dd)-$(Rev:rr)
+trigger:
+  - master
+pool:
+  vmImage: 'ubuntu-latest'
+steps:
+  - script: echo Step 1
+  - script: echo Step 2
