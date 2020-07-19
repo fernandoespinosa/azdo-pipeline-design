@@ -1,5 +1,11 @@
+variable org_service_url {}
+
+variable personal_access_token {}
+
 provider "azuredevops" {
   version = ">= 0.0.1"
+  org_service_url = var.org_service_url
+  personal_access_token = var.personal_access_token
 }
 
 data "azuredevops_project" "project" {

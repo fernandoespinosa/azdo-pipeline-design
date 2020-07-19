@@ -8,9 +8,6 @@
 out
 gen
 
-### Custom
-.env
-
 ### Terraform template
 # Local .terraform directories
 **/.terraform/*
@@ -26,7 +23,7 @@ crash.log
 # .tfvars files are managed as part of configuration and so should be included in
 # version control.
 #
-# example.tfvars
+credentials.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
@@ -45,4 +42,3 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-
