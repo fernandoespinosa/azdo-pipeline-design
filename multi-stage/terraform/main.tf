@@ -18,7 +18,8 @@ data "azuredevops_git_repositories" "repository" {
 }
 
 resource "azuredevops_build_definition" "pipeline" {
-  project_id = ""
+  project_id = data.azuredevops_project.project.id
+  name = "azdo-pipeline-design-multi-stage"
   repository {
     repo_id = data.azuredevops_git_repositories.repository.id
     repo_type = "TfsGit"
