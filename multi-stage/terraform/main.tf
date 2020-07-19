@@ -42,4 +42,7 @@ resource azuredevops_build_definition pipeline {
     yml_path = "/multi-stage/pipeline.yaml"
     service_connection_id = azuredevops_serviceendpoint_github.github.id
   }
+  ci_trigger {
+    use_yaml = true
+  }
 }
